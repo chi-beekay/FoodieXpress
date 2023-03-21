@@ -1,6 +1,8 @@
 /*========== GOOGLE FONTS ===========*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
 /*========== VARIABLE CSS ===========*/
 
 :root {
@@ -14,7 +16,7 @@
 
     /*========== Font and typography ==========*/
     --body-font: 'Roboto', sans-serif;
-
+    --font-mont: 'Montserrat', sans-serif;
 }
 
 
@@ -148,4 +150,63 @@ nav .nav-bar i {
 /* show-menu */
 .show-menu {
     right: 0;
+}
+
+.home {
+    /* background-color: red; */
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.home-detail__header {
+    font-family: var(--font-mont);
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.header-1 {
+    color: var(--color-grey);
+}
+.header-2 {
+    color: var(--color-primary);
+}
+
+.home-detail__img {
+    width: 40%;
+    margin-bottom: 1rem;
+}
+
+.home-detail__text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+.home-detail__form {
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    /* justify-content: space-between; */
+    padding: .5rem;
+    border-radius: 2rem;
+    color: var(--color-background);
+}
+
+.home-detail__form input {
+    border: none;
+    background: transparent;
+    color: var(--color-background);
+    outline: none;
+    width: 50%;
+}
+
+.home-detail__form input::placeholder {
+    color: var(--color-background);
+}
+
+.home-detail__form p {
+    font-size: 10px;
 }
