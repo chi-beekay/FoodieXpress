@@ -48,10 +48,8 @@ ul {
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    /* display: block;
-    width: 100%; */
+    display: block;
+    width: 100%;
 }
 
 svg {
@@ -59,7 +57,7 @@ svg {
     aspect-ratio: 1/1;
 }
 
-/* .grid {
+.grid {
     display: grid;
     gap: 1.5rem ;
 }
@@ -69,7 +67,7 @@ svg {
     aspect-ratio: 1/1;
     border-radius: 50%;
     overflow: hidden;
-} */
+}
 
 /************** REUSABLE STYLING **************/
 .btn {
@@ -152,6 +150,8 @@ nav .nav-bar i {
     right: 0;
 }
 
+/*========== HOME SECTION ===========*/
+
 .home {
     /* background-color: red; */
     padding: 0 1rem;
@@ -209,4 +209,74 @@ nav .nav-bar i {
 
 .home-detail__form p {
     font-size: 10px;
+}
+
+/*========== RESTAURANT SECCTION ===========*/
+
+.restaurant {
+    /* background-color: red; */
+    padding: 5rem 1rem;
+}
+
+.restaurant h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.restaurant-grid {
+    align-items: center;
+    justify-content: center;
+    /* place-items: center; */
+}
+
+.restaurant-grid__sub .img {
+    /* width: 50%; */
+    /* aspect-ratio: 1/1; */
+    border-radius: 2rem;
+    overflow: hidden;
+    background-color: aquamarine;
+    margin-bottom: 1rem;
+}
+
+.restaurant-grid__sub p {
+    color: var(--color-grey);
+}
+.restaurant-grid__sub p i{
+    color: var(--color-black);
+}
+.restaurant-grid__sub p span {
+    color: var(--color-light-grey);
+}
+
+/*========== CATEGORY SECCTION ===========*/
+.category {
+    /* background-color: red; */
+    padding: 0 1rem;
+}
+
+.category h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.category-grid {
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    /* justify-content: center; */
+    /* place-items: center; */ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.category-grid__sub {
+    margin-bottom: 3rem;
+}
+.category-grid__sub a{
+    background: var(--color-primary);
+    color: var(--color-background);
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
 }
