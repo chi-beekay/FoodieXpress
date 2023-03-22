@@ -98,6 +98,10 @@ nav .logo {
  width: 60%;
 }
 
+.nav-menu__desk {
+    display: none;
+}
+
 .nav-menu {
     position: fixed;
     display: flex;
@@ -231,7 +235,7 @@ nav .nav-bar i {
 
 .restaurant-grid__sub .img {
     /* width: 50%; */
-    /* aspect-ratio: 1/1; */
+    aspect-ratio: 1/1;
     border-radius: 2rem;
     overflow: hidden;
     background-color: aquamarine;
@@ -284,6 +288,7 @@ nav .nav-bar i {
     font-weight: 700;
 }
 
+/*========== HANDS SECCTION ===========*/
 .hands {
     background: rgba(213, 243, 222, 0.5);
     /* padding: 0 0; */
@@ -319,4 +324,277 @@ nav .nav-bar i {
     color: var(--color-background);
     font-family: var(--font-mont);
     font-weight: 700;
+}
+
+/*========== TESTIMONIAL SECCTION ===========*/
+.testimonial {
+    /* background-color: red; */
+    padding: 4rem 1rem;
+}
+
+.testimonial-container h1 {
+    text-align: center;
+    font-family: var(--font-mont);
+    font-weight: 700;
+    color: var(--color-grey);
+    margin-bottom: 2rem;
+}
+
+.testimonial-grid__sub {
+    background: var(--color-primary);
+    border-radius: 2rem;
+    color: var(--color-background);
+    padding: 2rem;
+}
+
+.testimonial-grid__sub .text {
+    margin-bottom: 2rem;
+    font-family: var(--font-mont);
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 15px;
+}
+
+.testimonial-grid__sub .profile {
+    display: flex;
+    align-items: center;
+    /* justify-content: ; */
+}
+
+.testimonial-grid__sub .profile p {
+    margin-left: 1rem;
+}
+
+
+/*========== FOOTER SECTION ===========*/
+footer {
+    margin-top: 4rem;
+}
+
+.footer-container {
+    background-color: var(--color-grey);
+    padding: 4rem 1rem;
+}
+
+.footer-logo {
+    width: 70%;
+}
+
+.footer-container .footer-links {
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--color-background);
+    font-family: var(--font-mont);
+}
+
+.footer-links__sub {
+    margin-bottom: 2rem;
+}
+
+.footer-links__sub h2 {
+    margin-bottom: 1rem;
+}
+
+.footer-links__sub ul li {
+    margin-bottom: .5rem;
+}
+
+
+/*==================== MEDIA QUERIES ====================*/
+/*==================== MEDIUM DEVICES ====================*/
+@media screen and (min-width: 500px){
+    nav,
+    .home,
+    .restaurant,
+    .testimonial {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .hands-container__text {
+        padding: 0 2rem;
+    }
+
+    .footer-logo {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 540px){
+    nav .logo {
+        width: 45%;
+    }
+    .home {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .home-details,
+    .home-image {
+        width: 100%;
+    }
+    
+    /* .home-details {
+        background-color: blueviolet;
+    }
+
+    .home-image {
+        background-color: brown;
+    } */
+
+    .home-detail__header {
+        font-size: 1.6rem;
+    }
+    
+    .home-detail__img {
+        width: 55%;
+    }
+    
+    .home-detail__text {
+        font-size: 1rem;
+    }
+    
+    .home-detail__form {
+        width: 100%;
+    }
+
+    /*========== RESTAURANT SECCTION ===========*/
+
+    .restaurant h1 {
+        font-size: 2rem;
+    }
+
+    .restaurant-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: initial;
+        justify-content: initial;
+    }
+
+    .restaurant-grid__sub .img {
+        /* width: 50%; */
+        aspect-ratio: 1/1;
+        border-radius: 2rem;
+        overflow: hidden;
+        background-color: aquamarine;
+        margin-bottom: 1rem;
+    }
+
+    .restaurant-grid__sub p {
+        color: var(--color-grey);
+    }
+    .restaurant-grid__sub p i{
+        color: var(--color-black);
+    }
+    .restaurant-grid__sub p span {
+        color: var(--color-light-grey);
+    }
+}
+
+/*==================== MEDIA QUERIES ====================*/
+/*==================== MEDIUM DEVICES ====================*/
+@media screen and (min-width: 750px){
+    nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.2rem 2rem;
+        position: relative;
+    }
+    
+    nav,
+        .home {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .nav-bar,
+        .nav-close {
+            display: none;
+        }
+
+        nav .logo {
+            width: 30%;
+        }
+
+
+        .nav-menu {
+            position: initial;
+            background-color: transparent;
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            justify-content: space-between;
+            width: initial;
+            height: initial;
+            right: 0;
+            top: 0;
+            text-align: left;
+            transition: none;
+            z-index: 0;
+        }
+
+        .nav-list {
+            display: flex;
+        }
+
+        .nav-menu ul {
+            margin-right: none;
+        }
+
+        .nav-menu ul li {
+            margin-bottom: 0;
+        }
+
+        .nav-menu ul li a, 
+        .nav-menu .nav-btn a {
+            font-size: 14px;
+            color: var(--color-background);
+            /* padding-right: 20px; */
+        }
+
+        .nav-menu ul li a {
+            margin-left: 2rem;
+        }
+
+        .nav-menu ul li .btn {
+            background: var(--color-background);
+            color: var(--color-primary);
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+    /*========== FOOTER SECTION ===========*/
+    footer {
+        margin-top: 4rem;
+    }
+
+    .footer-container {
+        background-color: var(--color-grey);
+        padding: 4rem 4rem;
+    }
+
+    .footer-logo {
+        width: 70%;
+    }
+
+    .footer-container .footer-links {
+        text-align: center;
+        margin-top: 2rem;
+        color: var(--color-background);
+        font-family: var(--font-mont);
+    }
+
+    .footer-links__sub {
+        margin-bottom: 2rem;
+    }
+
+    .footer-links__sub h2 {
+        margin-bottom: 1rem;
+    }
+
+    .footer-links__sub ul li {
+        margin-bottom: .5rem;
+    }
 }
