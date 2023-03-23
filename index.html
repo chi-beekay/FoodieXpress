@@ -8,6 +8,9 @@
     <!--------------- WEBSITE TITLE --------------->
     <title>Foodie Xpress | Landing Page</title>
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+
     <!--------------- LINK CSS --------------->
     <link rel="stylesheet" href="style.css">
 
@@ -215,29 +218,35 @@
 
     <!--------------- TESTIMONIAL SECTION --------------->
     <section class="testimonial">
-        <div class="testimonial-container">
+        <div class="testimonial-container swiper mySwiper">
             <!-- title -->
-            <h1>Our Users Testimonial</h1>
-            <!-- grid -->
-            <div class="testimonial-grid">
-                <!-- grid-1 -->
-                <div class="testimonial-grid__sub">
-                    <!-- text -->
-                    <p class="text">
-                        My experience using Foodie Xpress was easy
-                        because every transaction I made was
-                        not as difficult as expected at first.
-                    </p>
+            <!-- <h1>Our Users Testimonial</h1> -->
+            <div class="slide-content">
+                <!-- grid -->
+                <div class="testimonial-grid swiper-wrapper">
+                    <!-- grid-1 -->
+                    <div class="testimonial-grid__sub swiper-slide">
+                        <!-- text -->
+                        <p class="text">
+                            My experience using Foodie Xpress was easy
+                            because every transaction I made was
+                            not as difficult as expected at first.
+                        </p>
 
-                    <!-- profile -->
-                    <div class="profile">
-                        <div class="profile-photo">
-                            <img src="./images/img-1.jpg" alt="">
+                        <!-- profile -->
+                        <div class="profile">
+                            <div class="profile-photo">
+                                <img src="./images/img-1.jpg" alt="">
+                            </div>
+                            <p>John Jason Doe</p>
                         </div>
-                        <p>John Jason Doe</p>
                     </div>
                 </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-scrollbar"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -321,6 +330,8 @@
         </div>
     </footer>
 
+    <!-- Swiper JS -->
+    <script src="./swiper-bundle.min.js"></script>
 
     <script src="./app.js"></script>
 </body>

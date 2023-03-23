@@ -219,7 +219,7 @@ nav .nav-bar i {
 
 .restaurant {
     /* background-color: red; */
-    padding: 5rem 1rem;
+    padding: 2rem 1rem 5rem 1rem;
 }
 
 .restaurant h1 {
@@ -238,7 +238,7 @@ nav .nav-bar i {
     aspect-ratio: 1/1;
     border-radius: 2rem;
     overflow: hidden;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     margin-bottom: 1rem;
 }
 
@@ -428,6 +428,7 @@ footer {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        /* background-color: aqua; */
     }
 
     .home-details,
@@ -473,7 +474,7 @@ footer {
 
     .restaurant-grid__sub .img {
         /* width: 50%; */
-        aspect-ratio: 1/1;
+        aspect-ratio: 2/1.3;
         border-radius: 2rem;
         overflow: hidden;
         background-color: aquamarine;
@@ -493,7 +494,7 @@ footer {
 
 /*==================== MEDIA QUERIES ====================*/
 /*==================== MEDIUM DEVICES ====================*/
-@media screen and (min-width: 750px){
+@media screen and (min-width: 780px){
     nav {
         width: 100%;
         display: flex;
@@ -504,97 +505,201 @@ footer {
     }
     
     nav,
-        .home {
-            padding-left: 2rem;
-            padding-right: 2rem;
-        }
-
-        .nav-bar,
-        .nav-close {
-            display: none;
-        }
-
-        nav .logo {
-            width: 30%;
-        }
-
-
-        .nav-menu {
-            position: initial;
-            background-color: transparent;
-            display: flex;
-            flex-direction: row;
-            align-items: baseline;
-            justify-content: space-between;
-            width: initial;
-            height: initial;
-            right: 0;
-            top: 0;
-            text-align: left;
-            transition: none;
-            z-index: 0;
-        }
-
-        .nav-list {
-            display: flex;
-        }
-
-        .nav-menu ul {
-            margin-right: none;
-        }
-
-        .nav-menu ul li {
-            margin-bottom: 0;
-        }
-
-        .nav-menu ul li a, 
-        .nav-menu .nav-btn a {
-            font-size: 14px;
-            color: var(--color-background);
-            /* padding-right: 20px; */
-        }
-
-        .nav-menu ul li a {
-            margin-left: 2rem;
-        }
-
-        .nav-menu ul li .btn {
-            background: var(--color-background);
-            color: var(--color-primary);
-            font-size: 15px;
-            font-weight: 700;
-        }
-
-    /*========== FOOTER SECTION ===========*/
-    footer {
-        margin-top: 4rem;
+    .home {
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 
+    .nav-bar,
+    .nav-close {
+        display: none;
+    }
+
+    nav .logo {
+        width: 20%;
+    }
+
+
+    .nav-menu {
+        position: initial;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        width: initial;
+        height: initial;
+        right: 0;
+        top: 0;
+        text-align: left;
+        transition: none;
+        z-index: 0;
+    }
+
+    .nav-list {
+        display: flex;
+    }
+
+    .nav-menu ul {
+        margin-right: none;
+    }
+
+    .nav-menu ul li {
+        margin-bottom: 0;
+    }
+
+    .nav-menu ul li a, 
+    .nav-menu .nav-btn a {
+        font-size: 14px;
+        color: var(--color-background);
+        /* padding-right: 20px; */
+    }
+
+    .nav-menu ul li a {
+        margin-left: 2rem;
+    }
+
+    .nav-menu ul li .btn {
+        background: var(--color-background);
+        color: var(--color-primary);
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    /*========== HANDS SECCTION ===========*/
+
+    .home {
+        /* display: initial; */
+        flex-direction: initial;
+        /* align-items: baseline; */
+        /* justify-content: initial; */
+        position: relative;
+        margin: 14rem 0;
+    }
+
+    .home-details,
+    .home-image {
+        position: absolute;
+    }
+
+    .home-details {
+        left: 0;
+        width: 52%;
+        z-index: 50;
+        left: 10%;
+        /* background-color: rebeccapurple; */
+    }
+
+    .home-image {
+        right: 0;
+        /* background-color: green; */
+        width: 50%;
+    }
+
+    .home-detail__header {
+        font-size: 2rem;
+    }
+    
+    .home-detail__img {
+        width: 40%;
+    }
+    
+    .home-detail__text {
+        font-size: 1.2rem;
+    }
+    
+    .home-detail__form {
+        width: 65%;
+    }
+
+
+    /*========== RESTAURANT SECCTION ===========*/
+
+    .restaurant {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    /*========== CATEGORY SECCTION ===========*/
+
+    .category {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .category-grid {
+        gap: .5rem;
+    }
+
+
+    /*========== HANDS SECCTION ===========*/
+
+    .hands-container {
+        padding: 4rem 4rem;
+    }
+
+    .hands-container h1 {
+        font-size: 2.2rem;
+    }
+
+    .hands-container__img {
+        /* background: #322D2D; */
+        width: 30%;
+    }
+
+    .hands-container__text {
+        font-size: 1.2rem;
+        padding: 0 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .hands-container__btn .btn {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+
+
+    /*========== FOOTER SECTION ===========*/
+    .testimonial {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    /*========== FOOTER SECTION ===========*/
+
     .footer-container {
-        background-color: var(--color-grey);
         padding: 4rem 4rem;
     }
 
     .footer-logo {
-        width: 70%;
+        width: 30%;
     }
 
     .footer-container .footer-links {
-        text-align: center;
-        margin-top: 2rem;
-        color: var(--color-background);
-        font-family: var(--font-mont);
-    }
-
-    .footer-links__sub {
-        margin-bottom: 2rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: flex-start;
     }
 
     .footer-links__sub h2 {
-        margin-bottom: 1rem;
+        font-size: 1.2rem;
     }
 
-    .footer-links__sub ul li {
-        margin-bottom: .5rem;
+    .footer-links__sub ul li a{
+        font-weight: 200;
+    }
+
+    .footer-container .footer-links .footer-links__sub:nth-child(4) {
+        margin-top: 2.6rem;
+    }
+
+}
+    
+@media screen and (min-width: 850px){
+    .restaurant-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: initial;
+        justify-content: initial;
     }
 }
