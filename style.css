@@ -540,7 +540,7 @@ footer {
         top: 0;
         text-align: left;
         transition: none;
-        z-index: 0;
+        z-index: 100;
     }
 
     .nav-list {
