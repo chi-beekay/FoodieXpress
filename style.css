@@ -345,6 +345,7 @@ nav .nav-bar i {
     border-radius: 2rem;
     color: var(--color-background);
     padding: 2rem;
+    margin-bottom: 2rem;
 }
 
 .testimonial-grid__sub .text {
@@ -490,6 +491,12 @@ footer {
     .restaurant-grid__sub p span {
         color: var(--color-light-grey);
     }
+
+    .testimonial {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
 }
 
 /*==================== MEDIA QUERIES ====================*/
@@ -660,10 +667,56 @@ footer {
 
 
 
-    /*========== FOOTER SECTION ===========*/
-    .testimonial {
-        padding-left: 4rem;
-        padding-right: 4rem;
+     /*========== TESTIMONIAL SECCTION ===========*/
+     .testimonial {
+        /* background-color: red; */
+        padding: 4rem 4rem 2rem 4rem;
+    }
+
+    .testimonial-container h1 {
+        text-align: center;
+        font-family: var(--font-mont);
+        font-weight: 700;
+        color: var(--color-grey);
+        margin-bottom: 2rem;
+    }
+
+    .testimonial-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .testimonial-grid__sub {
+        background: var(--color-primary);
+        border-radius: 2rem;
+        color: var(--color-background);
+        padding: 2rem;
+        margin-bottom: 0;
+        transition: 1s ease;
+    }
+
+    .testimonial-grid__sub:hover {
+        /* background-color: #2D2A2A; */
+        transform: scale(1.1);
+    }
+
+    .testimonial-grid__sub .text {
+        margin-bottom: 2rem;
+        font-family: var(--font-mont);
+        font-weight: 500;
+        line-height: 1.2;
+        font-size: 15px;
+    }
+
+    .testimonial-grid__sub .profile {
+        display: flex;
+        align-items: center;
+        /* justify-content: ; */
+    }
+
+    .testimonial-grid__sub .profile p {
+        margin-left: 1rem;
     }
 
     /*========== FOOTER SECTION ===========*/
@@ -693,13 +746,217 @@ footer {
     .footer-container .footer-links .footer-links__sub:nth-child(4) {
         margin-top: 2.6rem;
     }
-
-}
     
+}
+
 @media screen and (min-width: 850px){
     .restaurant-grid {
         grid-template-columns: 1fr 1fr 1fr;
         align-items: initial;
         justify-content: initial;
     }
+}
+    
+@media screen and (min-width: 950px) {
+    .nav-menu ul li a {
+        margin-left: 4rem;
+    }
+
+     /*========== HANDS SECCTION ===========*/
+
+     .home {
+        /* display: initial; */
+        flex-direction: initial;
+        /* align-items: baseline; */
+        /* justify-content: initial; */
+        position: relative;
+        margin: 14rem 0;
+    }
+
+    .home-details,
+    .home-image {
+        position: absolute;
+    }
+
+    .home-details {
+        left: 0;
+        width: 60%;
+        z-index: 50;
+        left: 10%;
+        /* background-color: rebeccapurple; */
+    }
+
+    .home-detail__header {
+        font-size: 2.5rem;
+    }
+    
+    .home-detail__img {
+        width: 13rem;
+    }
+    
+    .home-detail__text {
+        font-size: 1.2rem;
+    }
+    
+    .home-detail__form {
+        width: 18rem;
+    }
+
+    .hands-container__img {
+        /* background: #322D2D; */
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .nav-menu ul li a {
+        margin-left: 4rem;
+    }
+
+     /*========== HANDS SECCTION ===========*/
+
+     .home {
+        /* display: initial; */
+        flex-direction: initial;
+        /* align-items: baseline; */
+        /* justify-content: initial; */
+        position: relative;
+        margin: 16rem 0;
+    }
+
+    .home-details,
+    .home-image {
+        position: absolute;
+    }
+
+    .home-details {
+        left: 0;
+        width: 60%;
+        z-index: 50;
+        left: 10%;
+        /* background-color: rebeccapurple; */
+    }
+
+    .home-detail__header {
+        font-size: 2.5rem;
+    }
+    
+    .home-detail__img {
+        width: 13rem;
+    }
+    
+    .home-detail__text {
+        font-size: 1.2rem;
+    }
+    
+    .home-detail__form {
+        width: 18rem;
+    }
+
+    .testimonial-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .category-grid__sub a{
+        padding: 2rem 3.5rem;
+    }
+
+    .category-grid__sub {
+        margin: 0 3rem 6rem 0;
+    }
+
+}
+
+@media screen and (min-width: 1100px) {
+    nav {
+        padding: 1.2rem 6rem;
+    }
+
+    .restaurant,
+    .category,
+    .testimonial,
+    .footer-container {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+
+    .nav-menu ul li a {
+        margin-left: 4rem;
+    }
+
+     /*========== HANDS SECCTION ===========*/
+
+     .home {
+        /* display: initial; */
+        flex-direction: initial;
+        /* align-items: baseline; */
+        /* justify-content: initial; */
+        position: relative;
+        margin: 18rem 0;
+    }
+
+    .home-details,
+    .home-image {
+        position: absolute;
+    }
+
+    .home-details {
+        left: 0;
+        width: 60%;
+        z-index: 50;
+        left: 12%;
+        /* background-color: rebeccapurple; */
+    }
+
+    .home-image {
+        right: 2%;
+    }
+
+    .home-detail__header {
+        font-size: 2.5rem;
+    }
+    
+    .home-detail__img {
+        width: 13rem;
+    }
+    
+    .home-detail__text {
+        font-size: 1.2rem;
+    }
+    
+    .home-detail__form {
+        width: 18rem;
+    }
+}
+@media screen and (min-width: 1250px) {
+    nav {
+        padding: 1.2rem 8rem;
+    }
+
+    .restaurant,
+    .category,
+    .testimonial,
+    .footer-container {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+    
+    .nav-menu ul li a {
+        margin-left: 4rem;
+    }
+
+     /*========== HANDS SECCTION ===========*/
+
+     .home {
+        /* display: initial; */
+        flex-direction: initial;
+        /* align-items: baseline; */
+        /* justify-content: initial; */
+        position: relative;
+        margin: 20rem 0;
+    }
+
+   
 }
