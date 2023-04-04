@@ -154,6 +154,10 @@ nav .nav-bar i {
     right: 0;
 }
 
+.show-nav {
+    top: 0;
+}
+
 /*========== HOME SECTION ===========*/
 
 .home {
@@ -490,6 +494,115 @@ form button {
 form button:hover {
     background-color: rgb(243, 242, 242);
 }
+
+
+/*==================== SIGNUP FORM ====================*/
+/*====================  ====================*/
+.dashboard {
+    position: relative;
+    width: 100%;
+}
+
+.dashboard-container{
+    width: 100%;
+    position: relative;
+}
+
+.sideNav{
+    position: relative;
+}
+
+.sideNav-container_content{
+    background-color: var(--color-primary);
+    width: 100%;
+    height: 100vh;
+    padding: 3rem 0;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sideNav-container_content.active {
+    transform: translateX(100%);
+}
+
+.sideNav-container_content .logo {
+    width: 14rem;
+    margin: 0 auto;
+}
+
+.sideNav-container_content .profile {
+    display: grid;
+    place-items: center;
+    margin-top: 3rem;
+    color: var(--color-background);
+}
+
+.sideNav-container_content .profile .profile-photo {
+    width: 5rem;
+    border: var(--color-background) solid 2px;
+    margin-bottom: .5rem;
+}
+
+.sideNav-container_content .profile h1 {
+    font-size: 1.7rem;
+}
+
+.sideNav-container_content .profile p {
+    font-size: 14px;
+    margin-top: .3rem;
+}
+
+.sideNav-container_content .links {
+    display: grid;
+    place-items: center;
+    margin-top: 5rem;
+}
+
+.sideNav-container_content .links-con {
+    display: grid;
+    /* place-items: center; */
+}
+
+.sideNav-container_content .links-con a{
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.sideNav-container_content .links-con a i{
+    font-size: 1.3rem;
+}
+
+.sideNav-container_content .links-con a.active{
+    background-color: antiquewhite;
+    color: var(--color-primary);
+    border-radius: .4rem;
+    /* place-items: center; */
+}
+
+.sideNav-container_content .logout {
+    /* display: grid; */
+    /* place-items: left; */
+    margin-left: 6.1rem;
+    margin-top: 7rem;
+}
+
+.sideNav-container_content .logout a {
+    font-size: 1rem;
+    color: var(--color-background);
+    font-weight: 500;
+}
+
+.sideNav-container_content .logout a i {
+    font-size: 1.3rem;
+}
+
+
+
 
 /*==================== MEDIA QUERIES ====================*/
 /*==================== MEDIUM DEVICES ====================*/
