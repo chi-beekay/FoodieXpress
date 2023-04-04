@@ -12,29 +12,19 @@ close.addEventListener("click", () => {
 	navMenu.classList.remove("show-menu");
 });
 
-var swiper = new Swiper(".slide-content", {
-	slidesPerView: 1,
-	centeredSlides: false,
-	slidesPerGroupSkip: 1,
-	grabCursor: true,
-	keyboard: {
-		enabled: true,
-	},
-	breakpoints: {
-		769: {
-			slidesPerView: 2,
-			slidesPerGroup: 2,
-		},
-	},
-	scrollbar: {
-		el: ".swiper-scrollbar",
-	},
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
-	pagination: {
-		el: ".swiper-pagination",
-		clickable: true,
-	},
+
+const inputs = document.querySelectorAll('input');
+
+inputs.forEach(function(input){
+	input.addEventListener('input', function() {
+		const leftIcon = this.parentNode.querySelector('.left');
+		leftIcon.style.display = 'none';
+	});
+
+	input.addEventListener('blur', function() {
+		const leftIcon = this.parentNode.querySelector('.left');
+		leftIcon.style.display = 'block';
+	});
 });
+
+

@@ -401,6 +401,96 @@ footer {
 }
 
 
+/*==================== SIGNUP FORM ====================*/
+/*====================  ====================*/
+
+.form {
+    position: relative;
+    width: 100%;
+    /* height: 100vh; */
+    /* background-color: #000000; */
+}
+
+.form-container {
+    /* margin: 0 auto; */
+    width: 100%;
+    /* background-color: blue; */
+}
+
+.form-container h1, 
+.form-container p {
+    text-align: center;
+}
+
+.form-container h1 {
+    margin: 2.5rem 0 0 0;
+}
+
+.form-container p {
+    margin: .5rem 0 1.5rem 0;
+}
+
+form {
+    display: grid;
+    background-color: var(--color-primary);
+    padding: 4rem 0;
+    place-content: center;
+    gap: 2rem;
+    width: 90%;
+    /* max-width: 70%; */
+    margin: 0 auto 4rem auto;
+    /* align-items: center; */
+}
+
+form label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+form label input{
+    background-color: var(--color-background);
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem 2.2rem;
+    width: 18rem;
+}
+
+form label input::placeholder {
+    color: var(--color-check);
+}
+
+form label i {
+    position: absolute;
+    font-size: .7rem;
+}
+
+form label .left {
+    left: 1.2rem;
+}
+
+form label .eyes {
+    right: 1.2rem;
+}
+
+form button {
+    width: 70%;
+    background-color: var(--color-background);
+    font-size: 1.4rem;
+    margin: 0 auto;
+    padding: 1rem 0;
+    border: none;
+    border-radius: .5rem;
+    outline: none;
+    font-weight: 700;
+}
+
+form button:hover {
+    background-color: rgb(243, 242, 242);
+}
+
 /*==================== MEDIA QUERIES ====================*/
 /*==================== MEDIUM DEVICES ====================*/
 @media screen and (min-width: 500px){
@@ -495,6 +585,19 @@ footer {
     .testimonial {
         padding-left: 5rem;
         padding-right: 5rem;
+    }
+
+    /*==================== SIGNUP FORM ====================*/
+    /*====================  ====================*/
+    .form-container h1 {
+        font-size: 2rem;
+    }
+    form {
+        max-width: 35rem;
+    }
+    
+    form label input {
+        width: 24rem;
     }
 
 }
