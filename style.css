@@ -1294,11 +1294,6 @@ footer {
         align-items: center;
     }
 
-    .vendor-details_sub .test {
-        /* display: initial; */
-        /* gap: 0; */
-    }
-
     .vendor-details_sub .test p {
         font-size: 17px;
     }
