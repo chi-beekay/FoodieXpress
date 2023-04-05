@@ -434,7 +434,7 @@ footer {
     margin: .5rem 0 1.5rem 0;
 }
 
-.input_form {
+#input_form {
     display: grid;
     background-color: var(--color-primary);
     padding: 4rem 0;
@@ -446,14 +446,14 @@ footer {
     /* align-items: center; */
 }
 
-.input_form label {
+#input_form label {
     display: flex;
     align-items: center;
     position: relative;
     width: 100%;
 }
 
-.input_form label input{
+#input_form label input{
     background-color: var(--color-background);
     outline: none;
     border: none;
@@ -462,24 +462,24 @@ footer {
     width: 18rem;
 }
 
-.input_form label input::placeholder {
+#input_form label input::placeholder {
     color: var(--color-check);
 }
 
-.inupt_form label i {
+#input_form label i {
     position: absolute;
     font-size: .7rem;
 }
 
-.input_form label .left {
+#input_form label .left {
     left: 1.2rem;
 }
 
-.input_form label .eyes {
+#input_form label .eyes {
     right: 1.2rem;
 }
 
-.input_form button {
+#input_form button {
     width: 70%;
     background-color: var(--color-background);
     font-size: 1.4rem;
@@ -491,7 +491,7 @@ footer {
     font-weight: 700;
 }
 
-.input_form button:hover {
+#input_form button:hover {
     background-color: rgb(243, 242, 242);
 }
 
